@@ -1,0 +1,143 @@
+#watCard
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-left: 100px;
+	width: 800px;
+	height: 500px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-box-shadow: 4px 6px 6px rgba(84, 84, 84, 0.66);
+	-moz-box-shadow: 4px 6px 6px rgba(84, 84, 84, 0.66);
+	box-shadow: 4px 6px 6px rgba(84, 84, 84, 0.66);
+	position: absolute;
+}
+.line
+{
+	width: 100%;
+	cursor: default;
+	margin-bottom: 3px;
+}
+#watCard-header
+{
+	width: 800px;
+	height: 100px;
+	background-color: #000000;
+	-webkit-border-radius: 25px 25px 0 0;
+	-moz-border-radius: 25px 25px 0 0;
+	border-radius: 25px 25px 0 0;
+	display: table;
+	position: absolute;
+	z-index: 5;
+}
+#watCard-header > DIV
+{
+	font-size: 70px;
+	color: #FFFFFF;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 100px;
+	cursor: default;
+	font-weight: normal;
+	font-family: gLight;
+}
+#watCard-header > DIV > SPAN
+{
+	color: #FF8C00;
+	font-family: gBold;
+	/*[empty]margin-left:;*/
+	margin-right: 4px;
+}
+#watCard-container
+{
+	padding-top: 100px;
+}
+#watCard-photo
+{
+	height: 305px;
+	width: 250px;
+	background: url("../../img/photo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	position: absolute;
+}
+#watCard-main
+{
+	float: left;
+	width: 470px;
+	padding: 15px 0px 0px;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 11px;
+	color: #000000;
+}
+#watCard-main > DIV
+{
+	font-weight: 500;
+	margin-left: 250px;
+}
+#logo
+{
+	height: 63px;
+	background-image: url("../../img/uwlogo.png");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	margin-top: 232px;
+	position: absolute;
+	margin-left: 270px;
+}
+#barCodeImage
+{
+	width: 350px;
+	height: 75px;
+	zoom: 100%;
+	position: absolute;
+	margin-top: 325px;
+	margin-left: 320px;
+	background: url(../../img/code.png) no-repeat;
+}
+#watCard-edge
+{
+	height: inherit;
+	width: 80px;
+	background-color: #FFC800;
+	-webkit-border-radius: 0px 0px 25px;
+	-moz-border-radius: 0 25px 25px;
+	border-radius: 0px 25px 25px 0px;
+	float: right;
+	z-index: 2;
+}
+#watCard-edge > DIV
+{
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	cursor: default;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: gMedium;
+	margin-top: 230px;
+	color: #000000;
+}
+
+#reset {
+	height: 50px;
+	width: 50px;
+	background-size: contain;
+	background-image: url(../../img/arrow.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	opacity: .5;
+}
+
+#reset:hover {
+	opacity: .8;
+	-webkit-transition: ease-in-out 0.2s;
+}

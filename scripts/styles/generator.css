@@ -1,0 +1,324 @@
+#generator
+{
+	width: 100%;
+	height: 100%;
+	min-height: 700px;
+}
+#generator_header
+{
+	position: relative;
+	margin-top: 5%;
+	min-width: 500px;
+}
+#generator_first_header
+{
+	width: 100%;
+	font-family: gMedium;
+	font-size: 50px;
+	text-align: center;
+}
+#generator_second_header
+{
+	width: 100%;
+	font-family: gBook;
+	font-size: 25px;
+	text-align: center;
+}
+#generator_info
+{
+	width: 100%;
+	font-family: gBook;
+	font-size: 15px;
+	text-align: center;	
+}
+#generator_main
+{
+	width: 100%;
+	min-width: 500px;
+	position: relative;
+	margin-top: 4%;
+}
+.mainline
+{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.mainline:hover {
+	opacity: .8;
+	z-index: 1000;
+	-webkit-transition: ease 0.2s;
+	
+}
+
+.mainline A
+{
+	left: 0;
+	right: 0;
+	position: absolute;
+	padding-top: 10px;
+	color: #FFFFFF;
+	width: 100%;
+	font-size: 17pt;
+	font-family: gBook;
+}
+
+
+
+
+
+#gm_givenname
+{
+	background-color: #ee7171;
+}
+#gm_familyname
+{
+	background-color: #f1b44a;
+}
+#gm_studentid
+{
+	background-color: #f2ed64;
+}
+#gm_faculty
+{
+	background-color: #7dd75d;
+}
+#gm_year
+{
+	background-color: #9ae2f0;
+}
+#gm_status
+{
+	background-color: #89ACE7;
+}
+#gm_photo
+{
+	background-color: #CFB2F1;
+}
+#gm_agree
+{
+	background-color: #f3b3e8;
+}
+#gm_watcardme
+{
+	display: none;
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	padding-top: 12px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	-webkit-transition: ease 1s;
+	background-color: #A9A9A9;
+}
+
+#gm_watcardme:hover
+{
+	-webkit-transition: ease 1s;
+	cursor: pointer;
+}
+
+
+#gm_watcardme A
+{
+	font-family: gBook;
+	color: #FFF;
+	font-size: 17pt;
+}
+
+
+
+
+
+
+.gm_input
+{
+	left: 0;
+	right: 0;
+	z-index: 100000;
+	display: none;
+	border: none; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    size: landscape;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    color: rgba(0,0,0,.5);
+    -webkit-transition: ease 0.5s;
+}
+
+
+
+#gm_givenname_input {
+	background-color: #ee7171;
+	font-size: 30px;
+}
+
+
+#gm_familyname_input
+{
+	background-color: #f1b44a;
+	font-size: 30px;
+}
+
+#gm_studentid_input
+{
+	background-color: #f2ed64;
+	font-size: 30px;
+}
+
+#gm_faculty_input
+{
+	background-color: #7dd75d;
+	font-size: 30px;
+}
+
+
+#gm_year_input
+{
+	background-color: #9ae2f0;
+	font-size: 30px;
+}
+#gm_status_input
+{
+	background-color: #89ACE7;
+	font-size: 30px;
+}
+
+#gm_agree_input
+{
+	background-color: #CFB2F1;
+}
+
+#gm_photo_input
+{
+	background-color: #CFB2F1;
+}
+
+#gm_agree_box
+{
+	height: auto;
+	background-color: #f3b3e8;
+
+}
+#gm_agree_content
+{
+	word-wrap:break-word;
+	height: 100px;
+	overflow: scroll;
+	color: #5d5d5d;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#gm_agree_box {
+	font-family: gBook;
+	color: #1d1d1d;
+	font-size: 15px;
+	padding-top: 0px;
+	height: 130px;
+	overflow:hidden;
+	border: none;
+
+}
+
+
+
+/* feedback */
+
+#feedback_background
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+}
+
+#feedback_dialog
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 300px;
+	height: 100px;
+	width: 450px;
+	background-color: white;
+	text-align: center;
+	font-family: gBook;
+	overflow: hidden;
+}
+
+
+
+#feedback_close
+{
+	cursor: pointer;
+	position: absolute;
+	height: 70px;
+	width: 450px;
+}
+
+#feedback_title {
+	font-family: gBold;
+	font-size: 15px;
+	height: 25px;
+	padding-top: 15px;
+}
+
+#feedback_info {
+	font-family: gBook;
+	font-size: 20px;
+	color: grey;
+}
+
+#feedback_info a {
+	color: red;
+	cursor: pointer;
+
+}
+
+
+/* option style */
+.gm_input option {
+	text-align: center;
+}
+
+/* Generator Info */
+#generator_info a{
+	border: 1px  dotted grey;
+	background-color: #f9f9f9;
+	width: 600px;
+	font-style: gBook;
+	text-align: center;
+	font-size: 12px;
+	position: relative;
+	color: grey;
+	text-align: center;
+	
+}
+
+#generator_info {
+	padding-top: 20px;
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+}

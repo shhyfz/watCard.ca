@@ -1,0 +1,171 @@
+1. Middle Name (A. BCDEFG)     (Maybe combine this with First name?)
+2. No download needed 
+3. relative and z-index needs to be fixed for Chrome & other broswers   (Looks good now on Chrom and safari)
+ 
+ Response:
+ 1. okay
+ 2. done
+ 3. done
+ 4. done
+ 5. no need to be done
+ 
+updated 2013/09/15 1:28pm
+
+-----------------
+
+
+1. In {Given Name,Family Name, Student ID} input field, hitting enter does not reflect errors.(Leave it for now)
+2. Feedback panel need to styling.
+3. we need to write some policies.
+4. watcard page need styling.(Display of two button)
+5. Picture of "STUDENT" to replace current text
+
+
+------------------
+
+
+Issues:
+1. NAME All capital letters (Done)
+2. There is actually Middle name exsiting shown as "W." before the given name (How should we do this)
+3. 
+
+Updated 9/13/2013 15:25
+
+------------------
+
+Issues:
+1. Agree to the policies. Need to be selected to proceed to next step.
+Once click on the "I agree" button, a policy will be displayed with a botton "I agree with the policy" following.
+
+2. Activate keyboard "Enter" to apply the input field (Done)
+
+3. When clicking on other buttons, the exsiting button will disappear. If the input is valid, apply it. 
+If not, load the previous valid input or leave it empty. (Done)
+
+Updated 9/12/2013 8:59
+
+-----------------
+Known issues:
+
+1. In generator View: delay was used to prevent input box from showing and disappering. (Not an issue anymore)
+2. In generator View: limited input validation available. (Should be enough now)
+3. In generator View: If user does not change selection, it does not update the view and model.(Start-up)
+4. In watCard View: need to replace "STUDENT" with image. (Last step.)
+5. Exp graduate year logic needs to re-write. (Do we still have this issue?)
+
+
+
+Generator Page Plan:
+Updated 8/22/2013 3:43
+
+----------------
+
+When clicking on any item, it will display a box with the same color as the one clicked on.
+Use JS to call the display of box and the border shadow.
+Once the inputed text is accepted, the font and color of original field will be changed.
+
+For every specific field, specify here:
+
+1. First name n last name:
+	textarea (allow letter and "'" only)
+	
+2. Student id:
+	has only 8 number field. can input number only and not exceed length of eight.
+	
+3. Faculty n status:
+	on every block, their is another BLACK block with opicity. the pointer-hover one will be 5% opicity. 
+	and all others will increase by 5%.
+	Call this by JS
+	once clicked on, the change will be maken.
+	
+	Once clicking on Others, a mailto: link is activated to ask the user to fill what is missing.
+	And shows an Others at card.
+	
+4. Year:
+	Samilar to faculty. but their are two more columns "up" and "down" which have no extra black block.
+
+5. Agree:
+	After cliking on I agree, it will check all the fields. If all fields are okay, "WatCardIt" will be activated
+	(I agree might change to "I am Ready")
+	
+6. WatCardIt 
+	This will be changed to "WatCard Me" @ version 0.2
+	Change to another color (both a and div) and font (a). and build the bridge to the final picture.
+
+
+--------------------
+
+
+
+WatCard Generator Document
+
+FIELDS
+1.	Last Name (%A%)
+2.	First Name (%B%)
+3.	ID (%C%)
+4.	Faculty (%D%)
+5.	Status (%E%)
+6.	Admitted Year (%F%)
+
+
+%A%
+%B% .
+ID %C%%D%
+%E%
+Exp JUNE %F%
+
+
+	%A%
+	String (input field, family name, “FAMILY”)
+
+Last name as shown in student profile
+
+
+
+	%B%
+	String (input fireld, given name, “GIVEN”)
+
+Given names (Middle+First) as shown in student profile
+
+
+
+	%C%
+	Int, 8 digits (input field, check integer, “20000000”)
+
+Student ID as shown in student profile
+
+
+
+
+	%D%
+	String (dropmenu*1)
+
+Mathematics	(excluding CFM)				MATHMETICS
+Engineering (excluding Software Engineering)	ENGINEERING
+Software Engineering				VP ADMIN
+Arts                      			ARTS
+Computing and Financial Management		VP ADMIN
+Environment					ENVIRONMENT
+Science						SCEINCE
+Health Science					HEALTH SCIENCE
+Architecture                 ARCHITECTURE
+Others						“Pop up email feedback”
+
+
+
+	%E%
+	String (dropmenu*2)
+
+Full time undergraduate				FULL TIME UNDERGRAD
+Full time graduate				FULL TIME GRADUATE
+I am not in uWaterloo!				FUTURE STUDENT
+Others						“Pop up email feedback”
+
+
+
+	%F%
+	Int, four digits (select year from 1957 to current year)
+
+If admitted year < 2013 && undergraduate == true, expiration year = admitted year + 6
+If admitted year >= 2013 && undergraduate == true, expiration year = admitted year + 5
+If expiration year < current year && current month > June, expiration year = current year ++

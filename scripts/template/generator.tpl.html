@@ -1,0 +1,87 @@
+<div id="generator">
+
+	<div id="generator_header">
+	
+		<div id="generator_first_header">WatCard Generator</div>
+		<div id="generator_second_header">Student-Carded University of Waterloo</div>
+		<div id="generator_info">
+			<a>This application is designed to help University of Waterloo students to pre-view the newly designed WatCard with their information and pictures on it.</a>
+			<a>Click and go through each row and at the end we will generate your customized WatCard.</a>
+		</div>	
+	</div>
+	
+	<div id="generator_main">
+	
+		<div id="gm_givenname" class="mainline">
+			<a>Given Name</a>
+			<input id="gm_givenname_input" placeholder="Given Name" data-field="givenName" type="text" class="gm_input"></input>
+		</div>
+		<div id="gm_familyname" class="mainline">
+			<a>Family Name</a>
+			<input id="gm_familyname_input" placeholder="Family Name" data-field="familyName" type="text" class="gm_input"></input>
+		</div>
+		<div id="gm_studentid" class="mainline">
+			<a>Student ID</a>
+			<input id="gm_studentid_input" placeholder="Student ID Number" data-field="studentID" type="number" class="gm_input"></input>
+		</div>
+		<div id="gm_faculty" class="mainline">
+			<a>Faculty/Program</a>
+			<select id="gm_faculty_input" class="gm_input">
+				<option value="Faculty/Program">Faculty/Program</option>
+  				<option value="MATHEMATICS">Mathematics(excluding CFM)</option>
+  				<option value="VP ADMIN">Computing and Financial Management</option>
+  				<option value="ARTS">Arts</option>
+  				<option value="SCIENCE">Science</option>
+  				<option value="HEALTH SCIENCE">Health Science</option>
+  				<option value="ENVIRONMENT">Environment</option>
+  				<option value="ENGINEERING">Engineering(excluding Software Engineering)</option>
+  				<option value="VP ADMIN">Software Engineering</option>
+  				<option value="ARCHITECTURE">Architecture</option>
+  				<option value="">Others</option>
+			</select>
+		</div>
+		<div id="gm_year" class="mainline">
+			<a>Admitted Year</a>
+			<select id="gm_year_input" class="gm_input">
+				<option value="Admitted Year">Admitted Year</option>
+				<!-- content gets populated here -->
+			</select>
+		</div>
+		<div id="gm_status" class="mainline">
+			<a>Admitted Status</a>
+			<select id="gm_status_input" class="gm_input">
+				<option value="Admitted Status">Admitted Status</option>
+  				<option value="FULL TIME UNDERGRADUATE">Full time undergraduate</option>
+  				<option value="FULL TIME GRADUATE">Full time graduate</option>
+  				<option value="FULL TIME GRADUATE">Part time undergraduate</option>
+  				<option value="FULL TIME GRADUATE">Part time graduate</option>
+  				<option value="FUTURE STUDENT">I am not in uWaterloo!</option>
+  				<option value="">Others</option>
+			</select>
+		</div>
+		<div id="gm_photo" class="mainline">
+			<a>Photo</a>
+		</div>
+		<div id="gm_agree" class="mainline">
+			<a>Agreement</a>
+			<div id="gm_agree_box" class="gm_input">
+				<div id="gm_agree_content">It's illegal to make fake card or hard copy by using the the generated image. We do not collect any personal information you entered. The design is copyrighted by the University of Waterloo, Canada. The purpose of this application is 1, to make sure your selected photo fits the card 2, to share your admission with your friends 3, enjoy the nice design of a Canadian student card 4, research and learn on HTML5/CSS3. WatCard.info is not affiliated to official University department. The code is open-source on GitHub. This application is designed and engineered by Lucas Wang (Software Engineering, me@WangZitian.com) & Michael Hsiao (Computer Science, shhyfz@hotmail.com), students of University of Waterloo. If you have any concerns regarding this web app, please email hello@WatCard.info or call us at 519-804-8886.</div>
+				<input id="gm_agree_checkbox" type="checkbox"><span>I understand and agree with the above policies</span></div>
+			</div>
+		</div>
+		<button id="gm_watcardme"><a>WatCard Me!</a></button>
+		
+	</div>
+	
+
+</div>
+
+<input id="gm_photo_input" class="gm_input" type="file" accept="image/*" />
+
+<div id="feedback_background">
+	<div id="feedback_dialog">
+		<div id="feedback_close"></div>
+		<div id="feedback_title">We apologize any inconvenience</div>
+		<div id="feedback_info">Please let us know what is missing at <a href="mailto: hello@WatCard.info">hello@WatCard.info</a></div>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+HTML
+{
+	height: 100%;
+	width: 100%;
+	font-family: gBook;
+}
+BODY
+{
+	height: 100%;
+	width: 100%;
+	font-family: gBold;
+	font-size: 21pt;
+	margin: 0px;
+}
+@font-face
+{
+	font-family: gBook;
+	src: url(../../static/Gotham-Book.otf);
+}
+@font-face
+{
+	font-family: gBold;
+	src: url(../../static/Gotham-Bold.otf);
+}
+@font-face
+{
+	font-family: gLight;
+	src: url(../../static/Gotham-Light.otf);
+}
+@font-face
+{
+	font-family: gMedium;
+	src: url(../../static/Gotham-Medium.otf);
+}
+@font-face
+{
+	font-family: gBlack;
+	src: url(../../static/Gotham-Black.otf);
+}
+@font-face
+{
+	font-family: gThin;
+	src: url(../../static/Gotham-Thin.otf);
+}
+@font-face
+{
+	font-family: gUltra;
+	src: url(../../static/Gotham-Ultra.otf);
+}
+@font-face
+{
+	font-family: gXLight;
+	src: url(../../static/Gotham-XLight.otf);
+}
